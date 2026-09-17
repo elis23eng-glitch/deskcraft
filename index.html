@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DeskCraft - Curadoria inteligente de equipamentos para Home Office de alta performance e ergonomia.">
+  <title>DeskCraft | Curadoria & IA de Home Office</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Gradients -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Desk<span class="highlight">Craft</span></span>
+      </div>
+      <span class="badge-curatorship">Curadoria + IA 2026</span>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+      <h1 class="hero-title">Seu Home Office de Alto Desempenho e Sem Dores</h1>
+      <p class="hero-subtitle">
+        Equipamentos validados por especialistas e IA para transformar sua saúde, ergonomia e foco no trabalho remoto.
+      </p>
+
+      <!-- AI Assistant Box -->
+      <div class="ai-box">
+        <div class="ai-box-header">
+          <span class="ai-badge">🤖 Assistente IA de Setup</span>
+          <h2>Diga o seu problema e a IA recomenda a solução ideal:</h2>
+        </div>
+        
+        <form id="ai-form" class="ai-input-group">
+          <input 
+            type="text" 
+            id="ai-input" 
+            placeholder="Ex: 'Sinto dor nas costas', 'Cansaço nos olhos à noite' ou 'Mesa cheia de cabos'..." 
+            required 
+            autocomplete="off"
+          />
+          <button type="submit" id="ai-submit-btn" class="btn-ai">
+            <span>Recomendar com IA</span> ✨
+          </button>
+        </form>
+
+        <!-- Quick Prompt Chips -->
+        <div class="ai-chips">
+          <span class="chip-label">Exemplos rápidos:</span>
+          <button type="button" class="chip" data-prompt="Sinto dores nas costas e postura curvada">🪑 Dor nas costas</button>
+          <button type="button" class="chip" data-prompt="Dor no pescoço ao olhar o notebook">💻 Dor no pescoço</button>
+          <button type="button" class="chip" data-prompt="Visão cansada e dor de cabeça à noite">💡 Vista cansada</button>
+          <button type="button" class="chip" data-prompt="Mesa bagunçada com muitos fios e cabos">🔌 Bagunça de cabos</button>
+        </div>
+
+        <!-- AI Result Box (Hidden by default) -->
+        <div id="ai-result-box" class="ai-result-box hidden">
+          <div class="ai-result-header">
+            <span class="ai-avatar">🤖</span>
+            <h3>Análise do Assistente DeskCraft IA</h3>
+          </div>
+          <p id="ai-response-text" class="ai-response-text"></p>
+          <div id="ai-recommended-product" class="ai-recommended-product"></div>
+        </div>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="filter-group" id="filter-group">
+        <button class="filter-btn active" data-category="todos">Todos os Itens</button>
+        <button class="filter-btn" data-category="ergonomia">Ergonomia</button>
+        <button class="filter-btn" data-category="iluminacao">Iluminação</button>
+        <button class="filter-btn" data-category="organizacao">Organização</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Showcase -->
+  <main class="products-section">
+    <div class="container">
+      <div class="products-grid" id="products-grid">
+        <!-- Products will be injected by JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Value Proposition Banner -->
+  <section class="banner-section">
+    <div class="container">
+      <div class="banner-card">
+        <h2>Como a IA e nossa curadoria funcionam?</h2>
+        <div class="banner-features">
+          <div class="feature-item">
+            <span class="feature-icon">🔍</span>
+            <h3>Análise Inteligente</h3>
+            <p>A IA cruza o seu sintoma ou necessidade com a especificação técnica do produto ideal.</p>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🧘</span>
+            <h3>Foco em Saúde</h3>
+            <p>Priorizamos ergonomia para evitar lesões por esforço repetitivo (LER) e dores crônicas.</p>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">💰</span>
+            <h3>Custo-Benefício</h3>
+            <p>Links diretos atualizados com o menor preço e frete rápido nos maiores marketplaces.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2026 DeskCraft - Desenvolvido como projeto de aprendizado com a <strong>DIO</strong>.</p>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="app.js"></script>
+</body>
+</html>
